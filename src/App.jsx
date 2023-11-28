@@ -1,20 +1,19 @@
-function App() {
-  return (
-    <div>
-      <header>
-        <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
-        <h1>React Essentials</h1>
-        <p>
-          Fundamental React concepts you will need for almost any app you are
-          going to build!
-        </p>
-      </header>
+import React from "react";
+import Header from "./header"
+import CoreConcepts from "./CoreConcepts";
+import Examples from "./Examples";
+import "./index.css";
 
-      <main>
-        <h2>Time to get started!</h2>
-      </main>
-    </div>
-  );
+function App(){
+  return(
+    <div>
+        <Header />
+        <main>
+           <CoreConcepts />
+           <Examples />
+       </main>
+    </div>    
+  )
 }
 
 export default App;
